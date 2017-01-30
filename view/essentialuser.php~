@@ -35,5 +35,6 @@
 			<li><div class="divider"></div></li>
 			<li><a class="subheader">Addition Menu</a></li>
 			<li><a href="#!"><i class="material-icons">live_help</i>Help</a></li>
+			<li><a href="profile.php"><i class="material-icons">perm_identity</i>My profile</a></li>
 		</ul>';
 ?>

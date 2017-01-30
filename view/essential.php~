@@ -31,6 +31,7 @@
 					<li><div class="divider"></div></li>
 					<li><a class="subheader">Addition Menu</a></li>
 					<li><a href="help.php"><i class="material-icons">live_help</i>Help</a></li>
+					<li><a href="profile.php"><i class="material-icons">perm_identity</i>My profile</a></li>
 				</ul>';
 	}
 	else {
@@ -83,6 +84,7 @@
 					<li><div class="divider"></div></li>
 					<li><a class="subheader">Addition Menu</a></li>
 					<li><a href="help.php"><i class="material-icons">live_help</i>Help</a></li>
+					<li><a href="profile.php"><i class="material-icons">perm_identity</i>My profile</a></li>
 				</ul>';
 	}
 	echo '<nav class="teal">
