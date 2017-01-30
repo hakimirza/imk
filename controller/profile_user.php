@@ -1,6 +1,6 @@
 <?php
 	$msg = "";
-  	$sql = "SELECT user.*, jabatan.label FROM user, jabatan WHERE user.id = jabatan.id AND user.id=".$_SESSION['iduser'].";";
+  	$sql = "SELECT user.*, jabatan.label FROM user, jabatan WHERE user.idjabatan = jabatan.id AND user.id=".$_SESSION['iduser'].";";
   	$stmt = $conn->query($sql);
   	$result = $stmt->fetchAll();
   	$row = $result[0];

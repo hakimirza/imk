@@ -2,8 +2,11 @@
 	session_start();
 	include "DBConnect.php";
 	$redirect = "../index.php";
+	$errmsg = "";
+
 	if (isset($_POST['username']) && isset($_POST['password'])) {
 		echo "this";
+
 		$sql = 'SELECT * FROM user WHERE nip = "'.$_POST['username'].'" AND password = "'.$_POST['password'].'";';
 		$retval = mysqli_query($conn, $sql);
 		$count_row = mysqli_num_rows($retval);
@@ -13,7 +16,10 @@
 			$_SESSION['iduser'] = $row['id'];
 			if ($row['idjabatan'] == 1) $redirect = "../monitor.php";
 			else $redirect = "../profile.php";
-			echo $_SESSION['nip'];
+		}
+		else{
+			$errmsg .= "NIP or Password";
+			$_SESSION['errmsg'] = $errmsg;
 		}
 	}
 	header("Location: ".$redirect);

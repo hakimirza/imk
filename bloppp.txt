@@ -1,0 +1,26 @@
+All : 
+     - Tombol edit belum aktif (H)
+     fe - Panjang tiap form perlu disesuaikan dg kemungkinan panjang inputan (H)
+     fe - Navigasi, mgkin perlu breadcrumbs (H)
+     fe - Samakan bahasa -> konsisten (AF)
+     fe - Icon utama mengarah ke Home (AF)
+     //- Compatible di semua browser (AF)
+     - Context help (AF)
+     - Jika username dan/atau password salah saat login tidak ada pemberitahuan (B)
+     //- Solusi jika lupa username/password (B)
+     - Menu yang sedang digunakan ter-highlight begitu juga link yang 
+       sudah digunakan agar
+       pengguna mengetahui posisinya pada website (Z)
+Admin : 
+     1. Monitoring : 
+        - tombol di kolom view blm brfungsi (H)
+        - kolom view tdk perlu sortable (H)
+     2. Dimensi Editor :
+        - kolom terakhir tdk perlu sortable (H)
+     3. Register User :
+        - jika tdk punya bos, tidak perlu muncul option bos (H)
+        - "pilih atasan anda" kata rancu, karena yang mendaftarkan adalah admin (B)
+     4. My profile : 
+        - tidak ada title sdg berada di page my profile
+     5. Help
+        - (textual bloopers) tidak konsisten title pada menu "help" saat diklik muncul "panduan web"

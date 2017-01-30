@@ -1,7 +1,7 @@
 <?php
 	$servernamedb = "localhost";
 	$usernamedb = "root";
-	$passworddb = "";
+	$passworddb = "root";
 	$namedb = "dmkm";
 	
 

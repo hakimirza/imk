@@ -154,6 +154,16 @@ div.stickybot {
 	background-color: #cceae7;
 	border-radius: 4px;
 }
+
+.danger{
+	padding: 10px 20px;
+	margin: 10px 0px;
+	width: 100%;
+	color: #b74948;
+	background-color: #eacccc;
+	border-radius: 4px;
+}
+
 .detail-user{
 	background-color: #e0f2f1;
 	border-top: solid #009688 4px;
@@ -166,4 +176,8 @@ div.stickybot {
 .view-profile:hover{
 	background-color: #009688;
 	color: white; 
+}
+
+.ico-teal{
+	color : #009688;
 }
