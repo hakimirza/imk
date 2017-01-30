@@ -6,7 +6,7 @@
       <link type="text/css" rel="stylesheet" href="assets/css/custom.css"  media="screen,projection"/>
       <link rel="stylesheet" type="text/css" href="assets/css/datatable.css">
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <title>Daftar User</title>
+      <title>Users</title>
       <link rel="icon" href="assets/images/logo-bps.png" sizes="32x32">
     </head>
     <body>
@@ -15,7 +15,7 @@
       <div id="content" class="container">
         <div class="row content-title">
           <div class="col s12 m6" style="margin-top:25px">
-            <span>Daftar User</span>
+            <span>Users</span>
           </div>
         </div>
           <?php 
@@ -30,11 +30,11 @@
           <thead>
             <tr>
                 <th data-field="id">No</th>
-                <th data-field="name">Nama</th>
+                <th data-field="name">Name</th>
                 <th data-field="nip">NIP</th>
-                <th data-field="jabatan">Jabatan</th>
+                <th data-field="jabatan">Position</th>
                 <th data-field="rating">Rating</th>
-                <th data-field="jumlah">Jumlah Anggota</th>
+                <th data-field="jumlah">Subordinate</th>
                 <th data-field="action">Action</th>
             </tr>
           </thead>
@@ -104,7 +104,7 @@
         //delete user
         $('.delete').click(function(event) {
           /* Act on the event */
-          if(confirm("Apakah anda ingin menghapus user ini?")){
+          if(confirm("Are you sure to delete it?")){
             var _idtodelete = $(this).attr('iduser');
             $.redirectPost('./controller/delete.php',{idtodelete: _idtodelete, redirect: "../daftar-user.php", key:"id", table:"user"});
           }

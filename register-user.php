@@ -10,7 +10,7 @@
       <script src="assets/js/highcharts-more.js"></script>
       <script src="assets/js/exporting.js"></script>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <title>Register User</title>
+      <title>User Register</title>
       <link rel="icon" href="assets/images/logo-bps.png" sizes="32x32">
     </head>
     <?php 
@@ -52,7 +52,7 @@
       <div id="content" class="container">
         <div class="row content-title">
           <div class="col s12 m6" style="margin-top:25px">
-            <span>Tambah Anggota / User</span>
+            <span>User Register</span>
           </div>
         </div>
 
@@ -61,19 +61,19 @@
           <div class="row">
             <div class="input-field col s12">
               <input id="nama" name="nama" type="text" class="validate" required>
-              <label for="nama">Nama</label>
+              <label for="nama">Name</label>
             </div>
             <div class="input-field col s12">
               <input id="nip" name="nip" type="text" class="validate" required>
-              <label for="nip">nip</label>
+              <label for="nip">NIP</label>
             </div>
             <div class="input-field col s12">
               <input id="email" name="email" type="email" class="validate" required>
-              <label for="email">email</label>
+              <label for="email">Email</label>
             </div>
             <div class="input-field col s12">
               <input id="password" name="password" type="password" class="validate" required>
-              <label for="password">password</label>
+              <label for="password">Password</label>
             </div>
             <div class="input-field col s12" >
               <select id="idjabatan" name="idjabatan" required>
@@ -87,7 +87,7 @@
                   }
                 ?>
               </select>
-              <label>Jabatan</label>
+              <label>Position</label>
             </div>
             <br>
             <div class="input-field col s12" id="userbos">

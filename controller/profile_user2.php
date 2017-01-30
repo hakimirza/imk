@@ -6,8 +6,8 @@
 		              <tr>
 		                  <th data-field="id">No</th>
 		                  <th data-field="name">Test</th>
-		                  <th data-field="price">Nilai</th>
-		                  <th data-field="price">Dimensi</th>
+		                  <th data-field="price">Score</th>
+		                  <th data-field="price">Dimension</th>
 		              </tr>
 		            </thead>
 

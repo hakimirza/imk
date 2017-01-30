@@ -17,14 +17,14 @@
     <body>
         <?php include "view/essential.php";?>
         <div id="content" class="container">
-            <h4><b>LANGKAH-LANGKAH MENGUBAH DIMENSI EDITOR</b></h4>
+            <h4><b>LANGKAH-LANGKAH MENGUBAH DIMENSI</b></h4>
             <br>
             <ol>
-                <li>Halaman dimensi editor dapat dibuka oleh Admin dengan mengklik 'Dimensi Editor' pada sidebar. 
+                <li>Halaman edit dimension dapat dibuka oleh Admin dengan mengklik 'Edit Dimension' pada sidebar. 
                 <img id="dimensieditor" style="width: 80%" src="assets/images/dimensieditor1.png">
                 </li>
                 <br>
-                <li>Saat membuka dimensi editor Anda akan melihat default sebagai berikut
+                <li>Saat membuka 'edit dimension' Anda akan melihat default sebagai berikut
                 <img id="dimensieditor" style="width: 80%" src="assets/images/dimensieditor.png">
                 </li>
                 <br>

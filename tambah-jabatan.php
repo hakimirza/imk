@@ -39,7 +39,7 @@
       <div id="content" class="container">
         <div class="row content-title">
           <div class="col s12 m6" style="margin-top:25px">
-            <span>Tambah Jabatan</span>
+            <span>Add Position</span>
           </div>
         </div>
 
@@ -48,7 +48,7 @@
           <div class="row">
             <div class="input-field col s12">
               <input id="jabatan" name="jabatan" type="text" class="validate" required>
-              <label for="jabatan">Nama Jabatan</label>
+              <label for="jabatan">Position Name</label>
             </div>
             <div class="input-field col s12" >
               <select name="idjabatanbos" required>
@@ -62,7 +62,7 @@
                   }
                 ?>
               </select>
-              <label>Jabatan Bos / Atasan</label>
+              <label>Leader</label>
             </div>
           </div>
           <button type="submit" name="submitjabatan" class="waves-effect waves-light btn" style="width:100%">Submit</button>

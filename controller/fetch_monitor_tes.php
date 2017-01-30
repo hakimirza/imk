@@ -3,11 +3,10 @@
 	$msg = $msg . '<table class="bordered highlight">
 				<thread>
 					<th>No</th>
-					<th>Judul</th>
-					<th>Untuk</th>
-					<th>Dimensi</th>
+					<th>Title</th>
+					<th>Purposed to</th>
+					<th>Dimension</th>
 					<th>Deadline</th>
-					<th>Submiter</th>
 					<th>Action</th>
 				</thread>
 				<tbody>';
@@ -34,7 +33,6 @@
 							<td>' . $label_jabatan['label'] . '</td>
 							<td>' . $label_dimensi['labeldimensi'] . '</td>
 							<td>' . $row['deadline'] . '</td>
-							<td>' . $count_check1 . '</td>
 							<td>
 								<form method = "POST" action = "controller/delete_tes.php">
 									<input type="hidden" name="idtes_to_delete" value="' . $row['id'] . '"/>

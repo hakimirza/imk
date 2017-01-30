@@ -3,10 +3,10 @@
 	$msg = $msg . '<table class="bordered highlight">
 				<thread>
 					<th>No</th>
-					<th>Nama</th>
-					<th>Jabatan</th>
-					<th>Judul</th>
-					<th>Nilai</th>
+					<th>Name</th>
+					<th>Position</th>
+					<th>Title</th>
+					<th>Score</th>
 					<th>Timestamp</th>
 				</thread>
 				<tbody>';

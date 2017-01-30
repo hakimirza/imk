@@ -8,9 +8,9 @@ include_once 'connection.php';
 		$key = $_POST['key'];
 		$count = $conn->exec("DELETE FROM $table WHERE $key = '$idsesuatu'");
 		if($count){
-			$_SESSION['message'] = "Hapus berhasil";
+			$_SESSION['message'] = "Deleted";
 		}else{
-			$_SESSION['message'] = "Hapus gagal";
+			$_SESSION['message'] = "Delete Failed";
 		}
 		header('Location: '.$idredirect);
 	}
