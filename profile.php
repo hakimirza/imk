@@ -1,7 +1,7 @@
   <!DOCTYPE html>
   <html>
     <head>
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link type="text/css" rel="stylesheet" href="assets/css/materialize.css"  media="screen,projection"/>
       <link type="text/css" rel="stylesheet" href="assets/css/custom.css"  media="screen,projection"/>
       <link rel="stylesheet" type="text/css" href="assets/css/material-icon/css/material-design-iconic-font.css">
@@ -16,11 +16,20 @@
       
       <title>Profile</title>
       <link rel="icon" href="assets/images/logo-bps.png" sizes="32x32">
+
+      <style type="text/css">
+        .ico-teal{
+          color: orange;
+        }
+      </style>
+
     </head>
     <body>
     
+    <?php 
+    include "view/essential.php";
+    ?>
 
-    <?php include "view/essential.php";?>
       <!-- Menu for navbar in top -->
       <div id="content" class="container">
         
@@ -31,8 +40,6 @@
         </div>
         <?php 
           include_once './controller/connection.php';
-
-
 
           $chart = array();
 
@@ -92,8 +99,6 @@
             <div class="divider-horizontal"></div>
             ';
 
-
-
             $stmt = $conn->query("SELECT d.id, d.labeldimensi, (SELECT SUM(nilai)/COUNT(nilai) From nilai WHERE iduser=$userId AND iddimensi = d.id) as nilai FROM dimensi d");
             $resultGraph = $stmt->fetchAll();
             foreach ($resultGraph as $key => $graph) {
@@ -112,11 +117,11 @@
 
             for($i=0;$i<5;$i++){
               if($i<$valueBulat){
-                $return .= '<i class="star zmdi zmdi-star"></i>';
+                $return .= '<i class="material-icons ico-teal">star</i>';
               }elseif ($i<$valueOri) {
-                $return .= '<i class="star zmdi zmdi-star-half"></i>';
+                $return .= '<i class="material-icons ico-teal">star_half</i>';
               }else{
-                $return .= '<i class="star zmdi zmdi-star-outline"></i>';
+                $return .= '<i class="material-icons ico-teal">star_outline</i>';
               }
             }
             return $return;

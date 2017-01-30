@@ -1,7 +1,8 @@
 <?php
 	$servernamedb = "localhost";
-	$usernamedb = "amin";
-	$passworddb = "aft";
+	$usernamedb = "root";
+	$passworddb = "root";
+
 	$namedb = "dmkm";
 	
 

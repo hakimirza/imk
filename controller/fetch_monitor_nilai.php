@@ -1,14 +1,14 @@
 <?php
 	$msg = "";
 	$msg = $msg . '<table class="bordered highlight">
-				<thread>
+				<thead class="teal" style="color:white">
 					<th>No</th>
 					<th>Name</th>
 					<th>Position</th>
 					<th>Title</th>
 					<th>Score</th>
 					<th>Timestamp</th>
-				</thread>
+				</thead>
 				<tbody>';
 	$sql = "SELECT * FROM nilai;";
 	$retval = mysqli_query($conn, $sql);

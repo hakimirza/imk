@@ -8,6 +8,13 @@
       
       <title>Evaluasi</title>
       <link rel="icon" href="assets/images/logo-bps.png" sizes="32x32">
+      
+      <style type="text/css">
+        .ico-teal{
+          color: orange;
+        }
+      </style>
+
     </head>
     <body>
       <?php include "view/essential.php";?>
@@ -125,11 +132,11 @@
 
             for($i=0;$i<5;$i++){
               if($i<$valueBulat){
-                $return .= '<i class="star zmdi zmdi-star"></i>';
+                $return .= '<i class="material-icons ico-teal">star</i>';
               }elseif ($i<$valueOri) {
-                $return .= '<i class="star zmdi zmdi-star-half"></i>';
+                $return .= '<i class="material-icons ico-teal">star_half</i>';
               }else{
-                $return .= '<i class="star zmdi zmdi-star-outline"></i>';
+                $return .= '<i class="material-icons ico-teal">star_outline</i>';
               }
             }
             return $return;
