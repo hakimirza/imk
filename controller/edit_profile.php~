@@ -1,7 +1,7 @@
 <?php
 	include "DBConnect.php";
 	if (isset($_POST['nama'])) {
-		$sql = "UPDATE user SET nama='" . ucwords(strtolower(($_POST['nama'] ))). "' WHERE id=".$_POST['user'].";";
+		$sql = "UPDATE user SET nama='" . ucwords($_POST['nama'] ). "' WHERE id=".$_POST['user'].";";
 		$retval = mysqli_query($conn, $sql);
 	}
 	$sql2 = "SELECT image FROM user WHERE user.id=".$_POST['user'].";";

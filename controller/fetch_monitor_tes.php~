@@ -1,14 +1,15 @@
 <?php
 	$msg = "";
-	$msg = $msg . '<table class="bordered highlight">
-				<thead class="teal" style="color:white">
-					<th>No</th>
-					<th>Title</th>
-					<th>Purposed to</th>
-					<th>Dimension</th>
-					<th>Deadline</th>
-					<th>Action</th>
-				</thead>
+	$msg = $msg . '<table class="bordered striped">
+				<thread>
+					<th data-field="no">No</th>
+					<th data-field="judul">Judul</th>
+					<th data-field="untuk">Untuk</th>
+					<th data-field="dimensi">Dimensi</th>
+					<th data-field="deadline">Deadline</th>
+					<th data-field="submiter">Submiter</th>
+					<th data-field="action">Action</th>
+				</thread>
 				<tbody>';
 	$sql = "SELECT * FROM test;";
 	$retval = mysqli_query($conn, $sql);
@@ -33,12 +34,8 @@
 							<td>' . $label_jabatan['label'] . '</td>
 							<td>' . $label_dimensi['labeldimensi'] . '</td>
 							<td>' . $row['deadline'] . '</td>
-							<td>
-								<form method = "POST" action = "controller/delete_tes.php">
-									<input type="hidden" name="idtes_to_delete" value="' . $row['id'] . '"/>
-									<input type="submit" value="Delete"' . $input_to_disable . '/>
-								</form>
-							</td>
+							<td>' . $count_check1 . '</td>
+							<td>'."<i iduser='".$row['id']."' class='material-icons delete'>delete</i>".' </td>
 						</tr>';
 	}
 	if ($count_check == 0) echo "Tidak ditemukan tes.";

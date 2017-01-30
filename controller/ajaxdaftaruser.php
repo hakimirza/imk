@@ -13,7 +13,7 @@ if(isset($_GET['idjabatan'])){
 		$result = $stmt->fetchAll();
 
 		$return="<select id='iduserbos' name='iduserbos' required>";
-		$return .= "<option value='' disabled selected>Belum ada bos</option>";
+		$return .= "<option value='' disabled selected>No Leader</option>";
 		foreach ($result as $key => $row) {
 			# code...
 			$id = $row['id'];
@@ -21,13 +21,13 @@ if(isset($_GET['idjabatan'])){
 			$return .= "<option value='$id'>$nama</option>";
 		}
 		$return .="</select>
-	              <label>Pilih Atasan Anda</label>";
+	              <label>Leader</label>";
 		echo $return;
     }else{
     	$return="<select id='iduserbos' name='iduserbos' required>";
-		$return .= "<option value='0'>Tidak mempunyai bos</option>";
+		$return .= "<option value='0'>No Leader</option>";
 		$return .="</select>
-	              <label>Pilih Atasan Anda</label>";
+	              <label>Leader</label>";
 	              echo $return;
     }
 	

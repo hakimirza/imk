@@ -32,8 +32,10 @@
 
       <!-- Menu for navbar in top -->
       <div id="content" class="container">
+        
         <div class="row content-title">
           <div class="col s12 m6" style="margin-top:25px">
+            <span>Profile</span>
           </div>
         </div>
         <?php 
@@ -87,7 +89,7 @@
                   <div class="col s6 spider-chart" id="chart">
                   </div>
                   <div class="col s6" style="color:#009688">
-                    <h5 style="margin-bottom:0px; margin-top:-20px">Rata-rata Nilai dimensi</h5>
+                    <h5 style="margin-bottom:0px; margin-top:-20px">Score</h5>
                     '.$detailnilai.'
                   </div>
                 </div>

@@ -15,7 +15,7 @@
       <div id="content" class="container">
         <div class="row content-title">
           <div class="col s12 m6" style="margin-top:25px">
-            <span>Daftar Dimensi</span>
+            <span>Dimension</span>
           </div>
         </div>
           <?php 
@@ -29,10 +29,10 @@
         <table class="bordered striped">
           <thead>
             <tr>
-                <th data-field="nomor">Nomor</th>
-                <th data-field="kodedimensi">Kode</th>
+                <th data-field="nomor">No</th>
+                <th data-field="kodedimensi">Code</th>
                 <th data-field="labeldimensi">Label</th>
-                <th data-field="deskripsi">Deskripsi</th>
+                <th data-field="deskripsi">Description</th>
                 <th data-field="action">Action</th>
             </tr>
           </thead>
@@ -81,7 +81,7 @@
           </tbody>
         </table>
         <br>
-        <a class="waves-effect waves-light btn" href="register-dimensi.php" style="width:100%"><i class="material-icons left">add</i>Tambah Dimensi</a>
+        <a class="waves-effect waves-light btn" href="register-dimensi.php" style="width:100%"><i class="material-icons left">add</i>Add Dimension</a>
       </div>
     </body>
 
@@ -96,7 +96,7 @@
         //delete user
         $('.delete').click(function(event) {
           /* Act on the event */
-          if(confirm("Apakah anda ingin menghapus dimensi ini?")){
+          if(confirm("Are you sure to delete it?")){
             var _idtodelete = $(this).attr('iddimensi');
             $.redirectPost('./controller/delete.php',{idtodelete: _idtodelete, redirect: "../daftar-dimensi.php", key:"id", table:"dimensi"});
           }

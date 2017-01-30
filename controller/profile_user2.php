@@ -1,5 +1,4 @@
 <?php
-
 $user = $_SESSION['iduser'];
 if ($user>1) {
 

@@ -2,6 +2,7 @@
 	$servernamedb = "localhost";
 	$usernamedb = "root";
 	$passworddb = "root";
+
 	$namedb = "dmkm";
 	
 
