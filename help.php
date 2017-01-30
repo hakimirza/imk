@@ -18,15 +18,15 @@
         <?php include "view/essential.php";?>
 
         <div id="content" class="container" style="text-align: center">
-            <h3>PANDUAN WEB</h3>
+            <h3>HELP</h3>
             <br>
             <a href="helplogin.php"><p>Login</p></a>
-            <a href="helpindexadmin.php"><p>Index Admin</p></a>
-            <a href="helpindexuser.php"><p>Index user</p></a>
-            <a href="helpprofiladmin.php"><p>Profil Admin</p></a>
-            <a href="helpprofiluser.php"><p>Profil User</p></a>
-            <a href="helpdimensieditor.php"><p>Dimensi Editor</p></a>
-            <a href="helpbuattes.php"><p>Buat Test</p></a>
+            <a href="helpindexadmin.php"><p>Admin index</p></a>
+            <a href="helpindexuser.php"><p>User Index</p></a>
+            <a href="helpprofiladmin.php"><p>Admin Profile</p></a>
+            <a href="helpprofiluser.php"><p>User Profile</p></a>
+            <a href="helpdimensieditor.php"><p>Edit Dimension</p></a>
+            <a href="helpbuattes.php"><p>New Test</p></a>
             <br>
         </div>
 

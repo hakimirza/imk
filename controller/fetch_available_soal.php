@@ -3,8 +3,8 @@
 	$msg = $msg . '<table class="bordered">
 				<thread>
 					<th>No</th>
-					<th>Tes</th>
-					<th>Aksi</th>
+					<th>Test</th>
+					<th>Action</th>
 				</thread>
 				<tbody>';
 	$sql2 = 'SELECT * FROM user WHERE nip = "'.$_SESSION['nip'].'";';
@@ -32,6 +32,6 @@
 							</td>
 						</tr>';
 	}
-	if ($count_check == 0) echo "Tidak ditemukan tes.";
+	if ($count_check == 0) echo "Test not Found";
 	else echo $msg . '</tbody></table>';
 ?>

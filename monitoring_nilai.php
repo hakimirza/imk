@@ -19,7 +19,7 @@
 		<?php include "view/essential.php";?>
 		<div id="content" class="container row">
 				<div class="card-panel">
-					<div class="midtitle"><h3>Monitor Nilai</h3></div>
+					<div class="midtitle"><h3>Edit Score</h3></div>
 					<?php include "controller/fetch_monitor_nilai.php";?>
 				</div>
 		</div>

@@ -22,13 +22,13 @@
           <thead>
             <tr>
                 <th data-field="id">No</th>
-                <th data-field="name">Nama</th>
+                <th data-field="name">Name</th>
                 <th data-field="nip">NIP</th>
-                <th data-field="jabatan">Jabatan</th>
+                <th data-field="jabatan">Position</th>
                 <th>Rating</th>
-                <th data-field="rating">Test Diselesaikan</th>
-                <th data-field="jumlah">Test Belum diselesaikan</th>
-                <th data-field="action">Supervised</th>
+                <th data-field="rating">Finished Test</th>
+                <th data-field="jumlah">Unfinished Test</th>
+                <th data-field="action">Subordinate</th>
                 <th>View</th>
             </tr>
           </thead>
@@ -134,7 +134,7 @@
                   <div class="col s6 spider-chart" id="chart">
                   </div>
                   <div class="col s6" style="color:#009688">
-                    <h5 style="margin-bottom:0px; margin-top:-20px">Rata-rata Nilai dimensi</h5>
+                    <h5 style="margin-bottom:0px; margin-top:-20px">Score</h5>
                     '.$detailnilai.'
                   </div>
                 </div>
@@ -236,7 +236,7 @@
 
         $('.delete').click(function(event) {
           /* Act on the event */
-          if(confirm("Apakah anda ingin menghapus user ini?")){
+          if(confirm("Are you sure to delete it?")){
             var _idtodelete = $(this).attr('iduser');
             $.redirectPost('./controller/delete.php',{idtodelete: _idtodelete, redirect: "../daftar-user.php", key:"id", table:"user"});
           }

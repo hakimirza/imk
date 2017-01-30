@@ -3,8 +3,8 @@
 	$msg = $msg . '<div  class = "card-panel">
 						<div class = "row">
 							<div class="input-field col s12">
-								<input name="judul" placeholder="Judul" id="judul" type="text" form="testingform" class="active validate" required/>
-								<label for="judul">Judul</label>
+								<input name="judul" placeholder="Title" id="judul" type="text" form="testingform" class="active validate" required/>
+								<label for="Judul">Title</label>
 							</div>
 						</div>
 						<div class = "row">
@@ -17,7 +17,7 @@
 						</div>
 						<div class = "row">
 							<div class="input-field col s6">
-									<p>Ujian ini ditujukan untuk:</p>';
+									<p>Purposed to:</p>';
 	$sql = "SELECT * FROM jabatan WHERE 1;";
 	$retval = mysqli_query($conn, $sql);
 	while ($row = mysqli_fetch_array($retval, MYSQLI_ASSOC)) {
@@ -26,7 +26,7 @@
 							<label for="' . $row['id'] . 'jabatan">' . $row['label'] . '</label>
 						</p>';
 	}
-	$msg = $msg . '</div><div class="input-field col s6"><p>Ujian ini untuk menilai:</p>';
+	$msg = $msg . '</div><div class="input-field col s6"><p>Dimension:</p>';
 	$sql1 = "SELECT * FROM dimensi WHERE 1;";
 	$retval1 = mysqli_query($conn, $sql1);
 	while ($row = mysqli_fetch_array($retval1, MYSQLI_ASSOC)) {

@@ -18,7 +18,7 @@
 		<?php include "controller/DBConnect.php";?>
 		<?php include "view/essential.php";?>
 		<div id="content" class="container">
-			<div class="midtitle"><h3>Monitor Tes</h3></div>
+			<div class="midtitle"><h3>Edit Test</h3></div>
 			<?php include "controller/fetch_monitor_tes.php";?>
 		</div>
 	</body>

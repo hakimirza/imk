@@ -25,9 +25,9 @@
 					</li>
 					<li><a href="profile.php"><i class="material-icons">perm_identity</i>Profile</a></li>
 					<li><div class="divider"></div></li>
-					<li><a href="tesmenejemen.php"><i class="material-icons">assignment</i>Kerjakan Soal</a></li>
+					<li><a href="tesmenejemen.php"><i class="material-icons">assignment</i>Test</a></li>
 					<li><div class="divider"></div></li>
-					<li><a href="evaluasi.php"><i class="material-icons">assignment_ind</i>Evaluasi Anggota</a></li>
+					<li><a href="evaluasi.php"><i class="material-icons">assignment_ind</i>Subordinate Evaluation</a></li>
 					<li><div class="divider"></div></li>
 					<li><a class="subheader">Addition Menu</a></li>
 					<li><a href="help.php"><i class="material-icons">live_help</i>Help</a></li>
@@ -49,17 +49,17 @@
 					</li>
 					<li><a href="monitor.php"><i class="material-icons">airplay</i>Monitoring</a></li>
 					<li><div class="divider"></div></li>
-					<li><a href="daftar-dimensi.php"><i class="material-icons">mode_edit</i>Dimensi Editor</a></li>
+					<li><a href="daftar-dimensi.php"><i class="material-icons">mode_edit</i>Edit Dimension</a></li>
 					<li><div class="divider"></div></li>
 					<li>
 						<ul class="collapsible collapsible-according" style="padding-left:15px">
 							<li>
-								<a class="collapsible collapsible-header"><i class="material-icons">playlist_add</i>Test Managemet</a>
+								<a class="collapsible collapsible-header"><i class="material-icons">playlist_add</i>Test Management</a>
 								<div class="collapsible-body">
 									<ul style="padding-left:40px">
-										<li><a href="buatsoal.php">Buat Tes</a></li>
-										<li><a href="monitoring_tes.php">Monitoring Tes</a></li>
-										<li><a href="monitoring_nilai.php">Monitoring Nilai</a></li>
+										<li><a href="buatsoal.php">Create Test</a></li>
+										<li><a href="monitoring_tes.php">Edit Test</a></li>
+										<li><a href="monitoring_nilai.php">Edit Score</a></li>
 									</ul>
 								</div>
 							</li>
@@ -69,12 +69,12 @@
 					<li>
 						<ul class="collapsible collapsible-according" style="padding-left:15px">
 							<li>
-								<a class="collapsible collapsible-header"><i class="material-icons">perm_identity</i>User Managemet</a>
+								<a class="collapsible collapsible-header"><i class="material-icons">perm_identity</i>User Management</a>
 								<div class="collapsible-body">
 									<ul style="padding-left:40px">
-										<li><a href="daftar-user.php">Daftar User</a></li>
-										<li><a href="jabatan-management.php">Jabatan Management</a></li>
-										<li><a href="register-user.php">Register User</a></li>
+										<li><a href="daftar-user.php">Users</a></li>
+										<li><a href="jabatan-management.php">Position Management</a></li>
+										<li><a href="register-user.php">User Register</a></li>
 									</ul>
 								</div>
 							</li>

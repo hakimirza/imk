@@ -18,7 +18,11 @@
 		<?php include "controller/DBConnect.php";?>
 		<?php include "view/essential.php";?>
 		<div id="content" class="container">
-			<div class="midtitle"><h3>Kerjakan Tes</h3></div>
+			<div class="row content-title">
+          <div class="col s12 m6" style="margin-top:25px">
+            <span>Test</span>
+          </div>
+        </div>
 			<?php include "controller/fetch_available_soal.php";?>
 		</div>
 	</body>
